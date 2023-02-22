@@ -17,7 +17,7 @@ python main.py
 To download your dataset
 
 ```
-wget https://raw.githubusercontent.com/saisubhasish/datasets/main/hypothyroid.csv
+wget https://raw.githubusercontent.com/namdeopatil/datasets/main/hypothyroid.csv
 ```
 
 This is changes made in neuro lab
@@ -72,15 +72,7 @@ git pull origin main
 Note: origin--> contains url to your github repo
 main--> is your branch name
 
-### Deployment link
-```
-Airflow:
-http://ec2-15-206-100-39.ap-south-1.compute.amazonaws.com:8080
 
-(Link might have expired)
-
-For real-time prediction:
-http://thyroiddiseasedetection-env-1.eba-wj7msmpa.us-east-1.elasticbeanstalk.com/
 
 ```
 ### Problem Statement
@@ -97,14 +89,7 @@ We need to build a ML model which will be used by hospitals and help the hospita
 5. MongoDB
 6. Flask
 
-## Infrastructure Required.
 
-1. AWS S3
-2. AWS EC2
-3. AWS ECR
-4. Github Actions
-5. Airflow
-6. AWS Elastic Beanstalk
 
 ## How to run?
 Before we run the project, make sure that you are having MongoDB in your local system, with Compass since we are using MongoDB for data storage. You also need AWS account to access the service like S3, ECR and EC2 instances.
@@ -138,7 +123,7 @@ For real-time prediction you can use the above Elastic Beanstalk link
 
 ### Step 1: Clone the repository
 ```bash
-git clone https://github.com/saisubhasish/APS-Sensor-Fault-Detection
+git clone https://github.com/Nplite/THYROID-DETECTION/
 ```
 
 ### Step 2- Create a conda environment after opening the repository
@@ -169,7 +154,7 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 
 export AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION>
 
-export MONGODB_URL="mongodb+srv://MongoDB:Sai12345@cluster0.i7o85x8.mongodb.net/?retryWrites=true&w=majority"
+export MONGODB_URL="mongodb+srv://MongoDB:Namdeopatil@cluster0.i7o85x8.mongodb.net/?retryWrites=true&w=majority"
 
 ```
 
@@ -197,18 +182,18 @@ docker run -d -p 8080:8080 <IMAGE_NAME>
 To run the project  first execute the below commmand.
 MONGO DB URL: 
 ```
-mongodb+srv://MongoDB:Sai12345@cluster0.i7o85x8.mongodb.net/?retryWrites=true&w=majority
+mongodb+srv://MongoDB:Namdeopatil@cluster0.i7o85x8.mongodb.net/?retryWrites=true&w=majority
 ```
 windows user
 
 ```
-MONGO_DB_URL=mongodb+srv://MongoDB:Sai12345@cluster0.i7o85x8.mongodb.net/?retryWrites=true&w=majority
+MONGO_DB_URL=mongodb+srv://MongoDB:Namdeopatil@cluster0.i7o85x8.mongodb.net/?retryWrites=true&w=majority
 ```
 
 Linux user
 
 ```
-mongodb+srv://MongoDB:Sai12345@cluster0.i7o85x8.mongodb.net/?retryWrites=true&w=majority
+mongodb+srv://MongoDB:Namdeopatil@cluster0.i7o85x8.mongodb.net/?retryWrites=true&w=majority
 ```
 
 then run 
